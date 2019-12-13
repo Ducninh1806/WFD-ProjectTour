@@ -11,6 +11,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { ListUserComponent } from './user/list-user/list-user.component';
+import { DeleteUserComponent } from './user/delete-user/delete-user.component';
+import { ListTourComponent } from './tour/list-tour/list-tour.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { RegisterComponent } from './auth/register/register.component';
     FooterComponent,
     SlideComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ListUserComponent,
+    DeleteUserComponent,
+    ListTourComponent
   ],
   imports: [
     BrowserModule,

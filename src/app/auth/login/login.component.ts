@@ -60,8 +60,8 @@ export class LoginComponent implements OnInit {
         this.isLoggedId = true;
         this.isLoginFailed = true;
         this.roles = this.tokenStorage.getAuthorities();
-        this.router.navigateByUrl(this.returnUrl + '/user');
-        console.log('login thanh cong');
+        this.router.navigateByUrl(this.returnUrl );
+        console.log('login thanh congss');
       }, error => {
         this.isLoginFailed = true;
         console.log(error);
@@ -69,7 +69,6 @@ export class LoginComponent implements OnInit {
     );
 
   }
-
 
 
 }
